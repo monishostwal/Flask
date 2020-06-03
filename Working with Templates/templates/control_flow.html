@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <ul>
+        {% for item in my_list %}
+            <li>{{item}}</li>
+        {% endfor %}
+        </ul>
+        {% if 3 in my_list %}
+            <p>3 in list</p>
+        {% else %}
+        <p>3 not in list</p>
+        {%endif%}
+    </body>
+</html> 
