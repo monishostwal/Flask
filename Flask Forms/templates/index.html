@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>Welcome to puppy survey</h1>
+        <form method="POST">
+            {{form_obj.hidden_tag()}} <br>
+            {{form_obj.breed.label}} {{form_obj.breed()}} <br><br>
+            {{form_obj.is_veg.label}} {{form_obj.is_veg()}} <br><br>
+            {{form_obj.mood.label}} {{form_obj.mood()}} <br> <br>
+            {{form_obj.review.label}} {{form_obj.review()}} <br> <br>
+             {{form_obj.submit()}} <br><br>
+    
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+    {% if not breed %}
+    <p>Please enter breed</p>
+    
+    {% else %}
+    <p>You entered breed {{breed}}</p>
+    {% endif %}
+    <form method="post">
+        {{info_obj.hidden_tag()}}
+        {{info_obj.breed.label}}{{info_obj.breed()}}
+        {{info_obj.submit}}
+    </form>
+    </body>
+</html>

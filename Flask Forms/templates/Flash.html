@@ -1,0 +1,11 @@
+<html>
+    <body>
+        {% for flash in get_flashed_messages() %}
+        aaya
+            {{flash}}
+        {% endfor %}
+        <form method="POST">
+            {{show.submit()}}
+        </form>
+    </body>
+</html>

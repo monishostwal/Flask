@@ -1,0 +1,24 @@
+<html>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    {% if result %}
+    <p>You are intelligent</p>
+    <br><br>
+    {% else %}
+    {% if not upper_case_letter  %}
+    <p>Not an upper case in username</p>
+    <br><br>
+    {% endif %}
+    {% if not lower_case_letter  %}
+    <p>Not an lower case in username</p>
+    <br><br>
+    {% endif %}
+    {% if not number_end  %}
+    <p>Not an number at end in username</p>
+    <br><br>
+    {% endif %}
+    {% endif %}
+    {% endblock content %}
+</body>
+</html>

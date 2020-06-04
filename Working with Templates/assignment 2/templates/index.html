@@ -1,0 +1,12 @@
+<html>
+    <body>
+        {% extends "base.html" %}
+        {% block content %}
+        Enter username :
+        <form action='{{url_for("check")}}'>
+        <input type='text' name='username'>
+        <input type='submit' value='Submit'>
+        </form>
+        {% endblock content %}
+    </body>
+</html>
